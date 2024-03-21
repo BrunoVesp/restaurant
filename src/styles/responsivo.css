@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (min-width: 361px) {
+    .item {
+        width: 612px;
+    }
+
+    .carrinho {
+        height: 50px;
+    }
+}
