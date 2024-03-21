@@ -1,1 +1,142 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------- CABEÇALHO --------------*/
+
+.cabecalho {
+    width: 100%;
+    height: 393px;
+
+    color: white;
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+}
+
+.imagem-hamburguer-cabecalho {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+}
+
+.nome-hamburguer-cabecalho {
+    font-size: 1.75rem;
+}
+
+.endereco {
+    font-size: 1rem;
+}
+
+.horarios {
+    font-size: 1.125rem;
+    background-color: #54CC0A;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/*-------------- MAIN --------------*/
+
+.titulo {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    margin-top: 20px;
+}
+
+.cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.1rem;
+}
+
+.item {
+    width: 377px;
+    height: 114px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.item:hover {
+    background-color: #d3d3d3;
+    transition: .4s;
+}
+
+.item-imagem {
+    width: 108px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.nome-item {
+    font-size: .875rem;
+    margin-bottom: 5px;
+}
+
+.descricao-item { 
+    font-size: .875rem;
+    line-height: 1.3rem;
+}
+
+.preco-container {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preco-container .material-symbols-outlined {
+    background-color: black;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preco-container .material-symbols-outlined:hover {
+    transform: scale(1.07, 1.07);
+    transition: .4s;
+}
+
+.bebida-imagem {
+    width: 108px;
+    height: 108px;
+}
+
+/*-------------- RODAPÉ --------------*/
+
+.carrinho {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #FF3131;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.carrinho:hover {
+    background-color: #a02020;
+    transition: .4s;
+}
